@@ -83,12 +83,22 @@ button span div {
 
 .offcanvas {
   height: 1000px;
-  width: -300px;
-  background-color: #da7272;
+  width: -400px;
+  background-color: #4d4c4c;
   right: 0;
   position: absolute;
 }
-
+.close_offcanva {
+  position: fixed;
+  cursor: pointer;
+}
+.offcanvas .close_offcanva div img {
+  width: 10px;
+  height: 10px;
+}
+.offcanvas .counteiner {
+  position: fixed;
+}
 .offcanvas.open {
   width: 300px;
 }
