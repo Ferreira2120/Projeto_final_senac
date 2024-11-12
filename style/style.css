@@ -91,3 +91,28 @@ button span div {
 .offcanvas.open {
   width: 300px;
 }
+.offcanvas ul {
+  display: block;
+  float: left;
+  left: 0;
+  margin-left: 0;
+}
+.offcanvas ul li {
+  color: #fff;
+  margin-top: 10px;
+  position: relative;
+  display: block;
+}
+.offcanvas ul li a {
+  color: #fff;
+  margin-left: 0;
+  text-decoration: none;
+  font-family: "Italiana", sans-serif;
+  font-size: 20px;
+  padding: 3px 200px 3px 0;
+  text-align: left;
+  left: 0;
+}
+.offcanvas ul li a:hover {
+  background-color: #585858;
+}
