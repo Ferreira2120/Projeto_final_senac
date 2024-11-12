@@ -80,18 +80,16 @@ button span div {
   border-bottom: 2px solid #ffffff;
   width: 25px;
 }
-
 .offcanvas {
   height: 1000px;
   width: -300px;
   background-color: #4b4b4b;
   right: 0;
   position: absolute;
+  display: inline-block;
 }
-
 .offcanvas ul {
   display: block;
-  float: left;
   left: 0;
   margin-left: 0;
   position: absolute;
