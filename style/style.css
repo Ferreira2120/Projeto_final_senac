@@ -88,14 +88,13 @@ button span div {
   right: 0;
   position: absolute;
 }
-.offcanvas.open {
-  width: 300px;
-}
+
 .offcanvas ul {
   display: block;
   float: left;
   left: 0;
   margin-left: 0;
+  position: absolute;
 }
 .offcanvas ul li {
   color: #fff;
@@ -115,4 +114,10 @@ button span div {
 }
 .offcanvas ul li a:hover {
   background-color: #585858;
+}
+.offcanvas.open {
+  width: 300px;
+}
+.offcanvas.close {
+  width: -300px;
 }
