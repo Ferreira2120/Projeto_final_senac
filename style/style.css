@@ -154,7 +154,8 @@ button span div {
   cursor: pointer;
   align-items: center;
 }
-#Home {
+.home {
   width: 100%;
   height: 900px;
+  color: #fff;
 }
