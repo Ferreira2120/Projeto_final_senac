@@ -88,7 +88,6 @@ body {
   cursor: pointer;
   background: none;
 }
-
 button span div {
   height: 5px;
   border-bottom: 2px solid #ffffff;
@@ -174,20 +173,16 @@ button span div {
 
 .nav_home h1 {
   position: absolute;
+  font-size: 55px;
 }
 .about{
-  height: 1000px;
+  height: 1100px;
   width: 100%;
-  display: table;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.about h1{
-  text-align: center;
-  
-  top: 35px;
-}
-.about .counteiner_div{
+.about .container_div{
   width: 80%;
   height: 900px;
   display: flex;
@@ -196,17 +191,35 @@ button span div {
   justify-content: center;
   align-items: center;
 }
-.about .counteiner_div div{
+.about .container_div div{
   border: 2px solid #4b4b4b;
   height: 500px;
   width: 30%;
   border-radius: 10px;
-  
+  text-align: center;
+  display: block; 
 }
-.about .counteiner_div div:hover{
+.about .container_div div:hover{
   box-shadow: 4px 3px 10px #444444;
   height: 510px;
   width: 35%;
   transition: all 0.4s ;
+}
+.about .container_div div h1{
+  font-size: 29px;
+}
+.about .container_div div p{
+  font-size: 20px;
+  margin-top: 55px;
+  justify-content: center;
+  align-items: center;
+}
+.about .container_div div a{
+  bottom: 0;
+  padding: 10px;
+  background-color: #4b4a4a;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
 }
 
