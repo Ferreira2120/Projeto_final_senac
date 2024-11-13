@@ -33,8 +33,8 @@ body {
   display: inline-block;
   float: inline-start;
   margin-left: 10px;
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
 }
 .cabeca .primeira_ul li a {
   font-family: "Italiana", sans-serif;
@@ -156,7 +156,7 @@ button span div {
 }
 
 .nav_home {
-  height: 900px;
+  height: 1000px;
   background-image: url(/img/5459923.jpg);
   text-align: center;
   border-top: 1px solid #000;
