@@ -49,7 +49,7 @@ body {
   height: 2px;
   border-bottom: #fff solid 0.2rem;
   border-radius: 5px;
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
 }
 
 .cabeca .primeira_ul.inativo {
@@ -156,12 +156,11 @@ button span div {
 }
 
 .nav_home {
-  height: 1000px;
+  height: 944px;
   background-image: url(/img/5459923.jpg);
   text-align: center;
   border-top: 1px solid #000;
-}
-.nav_home h1 {
-  margin-top: 45px;
-  top: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
