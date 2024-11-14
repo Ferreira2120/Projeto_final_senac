@@ -167,7 +167,7 @@ button span div {
   justify-content: center;
   align-items: center;
   background-size: cover;
-  position:static;
+  position: static;
   background-position: center;
 }
 
@@ -175,14 +175,14 @@ button span div {
   position: absolute;
   font-size: 55px;
 }
-.about{
+.about {
   height: 1100px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.about .container_div{
+.about .container_div {
   width: 80%;
   height: 900px;
   display: flex;
@@ -191,30 +191,32 @@ button span div {
   justify-content: center;
   align-items: center;
 }
-.about .container_div div{
+.about .container_div .div_container {
   border: 2px solid #4b4b4b;
   height: 500px;
   width: 30%;
   border-radius: 10px;
   text-align: center;
-  display: block; 
+  display: flow;
+  justify-content: center;
+  align-items: center;
 }
-.about .container_div div:hover{
+.about .container_div .div_container:hover {
   box-shadow: 4px 3px 10px #444444;
   height: 510px;
   width: 35%;
-  transition: all 0.4s ;
+  transition: all 0.4s;
 }
-.about .container_div div h1{
+.about .container_div .div_container h1 {
   font-size: 29px;
 }
-.about .container_div div p{
+.about .container_div .div_container p {
   font-size: 20px;
   margin-top: 55px;
   justify-content: center;
   align-items: center;
 }
-.about .container_div div a{
+.about .container_div .div_container a {
   bottom: 0;
   padding: 10px;
   background-color: #4b4a4a;
@@ -222,4 +224,8 @@ button span div {
   color: #fff;
   text-decoration: none;
 }
-
+.about .container_div .div_container a:hover {
+  background: none;
+  border: 2px solid #4b4b4b;
+  transition: all 0.5s;
+}
