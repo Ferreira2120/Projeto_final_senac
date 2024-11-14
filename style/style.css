@@ -96,7 +96,7 @@ button span div {
 .offcanvas {
   height: 1000px;
   width: -300px;
-  background-color: #4b4b4b;
+  background-color: #0c0c0c;
   right: 0;
   position: fixed;
   display: inline-block;
@@ -123,9 +123,21 @@ button span div {
   padding: 3px 200px 3px 0;
   text-align: left;
   left: 0;
+  border-bottom: 0;
 }
-.offcanvas ul li a:hover {
-  background-color: #585858;
+.offcanvas ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f1f1f1;
+  transition: width 0.5s ease;
+}
+
+.offcanvas ul li a:hover::after {
+  width: 100%;
 }
 .offcanvas.open {
   width: 300px;
@@ -162,7 +174,12 @@ button span div {
 
 .nav_home {
   height: 1100px;
-  background-image: url(/img/5459923.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 1)
+    ),
+    url(/img/5459923.jpg);
   width: 100%;
   text-align: center;
   border-top: 1px solid #000;
@@ -170,8 +187,8 @@ button span div {
   justify-content: center;
   align-items: center;
   background-size: cover;
-  position: static;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .nav_home h1 {
@@ -185,50 +202,56 @@ button span div {
   justify-content: center;
   align-items: center;
 }
+
 .about .container_div {
   width: 80%;
   height: 900px;
   display: flex;
   gap: 15px;
-  top: 135px;
   justify-content: center;
   align-items: center;
 }
+
 .about .container_div .div_container {
   border: 2px solid #4b4b4b;
   height: 500px;
   width: 30%;
   border-radius: 10px;
   text-align: center;
-  display: flow;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui os itens de forma que o 'a' fique embaixo */
   align-items: center;
+  padding: 20px; /* Adiciona espaçamento interno */
+  transition: all 0.4s;
 }
+
 .about .container_div .div_container:hover {
   box-shadow: 4px 3px 10px #444444;
   height: 510px;
   width: 35%;
-  transition: all 0.4s;
 }
+
 .about .container_div .div_container h1 {
   font-size: 29px;
-  position: sticky;
+  margin-top: 0;
 }
+
 .about .container_div .div_container p {
   font-size: 20px;
-  margin-top: 55px;
-  justify-content: center;
-  align-items: center;
-  position: static;
+  margin-top: 20px; /* Espaço entre h1 e p */
+  margin-bottom: 20px; /* Espaço entre p e a */
 }
+
 .about .container_div .div_container a {
-  bottom: 0;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #4b4a4a;
   border-radius: 50px;
   color: #fff;
   text-decoration: none;
+  margin-bottom: 0; /* Garante que o botão fica na parte inferior */
 }
+
 .about .container_div .div_container a:hover {
   background: none;
   border: 2px solid #4b4b4b;
