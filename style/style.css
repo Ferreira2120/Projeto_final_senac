@@ -98,7 +98,7 @@ button span div {
   width: -300px;
   background-color: #4b4b4b;
   right: 0;
-  position: absolute;
+  position: fixed;
   display: inline-block;
 }
 .offcanvas ul {
@@ -129,6 +129,9 @@ button span div {
 }
 .offcanvas.open {
   width: 300px;
+}
+.offcanvas.close {
+  width: -300px;
 }
 .offcanvas .btn_close {
   background: none;
