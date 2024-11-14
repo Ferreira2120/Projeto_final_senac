@@ -209,12 +209,14 @@ button span div {
 }
 .about .container_div .div_container h1 {
   font-size: 29px;
+  position: sticky;
 }
 .about .container_div .div_container p {
   font-size: 20px;
   margin-top: 55px;
   justify-content: center;
   align-items: center;
+  position: static;
 }
 .about .container_div .div_container a {
   bottom: 0;
