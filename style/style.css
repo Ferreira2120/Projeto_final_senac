@@ -133,7 +133,7 @@ button span div {
   width: 0;
   height: 2px;
   background-color: #f1f1f1;
-  transition: width 0.5s ease;
+  transition: width 1s ease;
 }
 
 .offcanvas ul li a:hover::after {
@@ -219,9 +219,9 @@ button span div {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribui os itens de forma que o 'a' fique embaixo */
+  justify-content: space-between;
   align-items: center;
-  padding: 20px; /* Adiciona espaçamento interno */
+  padding: 20px;
   transition: all 0.4s;
 }
 
@@ -238,8 +238,8 @@ button span div {
 
 .about .container_div .div_container p {
   font-size: 20px;
-  margin-top: 20px; /* Espaço entre h1 e p */
-  margin-bottom: 20px; /* Espaço entre p e a */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .about .container_div .div_container a {
@@ -248,7 +248,7 @@ button span div {
   border-radius: 50px;
   color: #fff;
   text-decoration: none;
-  margin-bottom: 0; /* Garante que o botão fica na parte inferior */
+  margin-bottom: 0;
 }
 
 .about .container_div .div_container a:hover {
