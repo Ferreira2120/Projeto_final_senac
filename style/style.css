@@ -147,7 +147,7 @@ button span div {
   width: 0;
   height: 2px;
   background-color: #f1f1f1;
-  transition: width 0.5s ease;
+  transition: width 1s ease;
 }
 
 .offcanvas ul li a:hover::after {
@@ -164,7 +164,6 @@ button span div {
 
 .offcanvas .btn_close {
   background: none;
-
   position: absolute;
   cursor: pointer;
   padding: 0;
