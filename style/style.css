@@ -1,7 +1,6 @@
 * {
   margin: 0;
 }
-
 body {
   margin: 0;
   background-color: rgb(0, 0, 0);
@@ -19,20 +18,17 @@ body {
   max-height: 70px;
   margin-top: 0;
 }
-
 .cabeca ul {
   display: inline-flex;
   text-align: center;
   gap: 20px;
   margin-top: 22px;
 }
-
 .cabeca ul li {
   list-style-type: none;
   justify-content: center;
   align-items: center;
 }
-
 .cabeca img {
   display: inline-block;
   left: 0;
@@ -41,7 +37,6 @@ body {
   height: 80px;
   width: 80px;
 }
-
 .cabeca .primeira_ul li a {
   font-family: "Italiana", sans-serif;
   color: #fff;
@@ -50,7 +45,6 @@ body {
   font-size: 20px;
   padding: 0.5rem;
 }
-
 .cabeca .primeira_ul li a:hover {
   font-size: 25px;
   transition: all 0.6s;
@@ -72,7 +66,6 @@ body {
   margin-right: 10px;
   gap: 0;
 }
-
 .cabeca .segunda_ul a li {
   width: 35px;
   color: #fff;
@@ -80,7 +73,6 @@ body {
   margin: 0;
   padding-bottom: 5px #fff;
 }
-
 .btn {
   cursor: pointer;
 }
@@ -96,13 +88,11 @@ body {
   cursor: pointer;
   background: none;
 }
-
 button span div {
   height: 5px;
   border-bottom: 2px solid #ffffff;
   width: 25px;
 }
-
 .offcanvas {
   height: 1000px;
   width: -300px;
@@ -111,7 +101,6 @@ button span div {
   position: fixed;
   display: inline-block;
 }
-
 .offcanvas ul {
   display: block;
   left: 0;
@@ -119,14 +108,12 @@ button span div {
   position: absolute;
   float: right;
 }
-
 .offcanvas ul li {
   color: #fff;
   margin-top: 10px;
   position: relative;
   display: block;
 }
-
 .offcanvas ul li a {
   color: #fff;
   margin-left: 0;
@@ -138,7 +125,6 @@ button span div {
   left: 0;
   border-bottom: 0;
 }
-
 .offcanvas ul li a::after {
   content: "";
   position: absolute;
@@ -153,15 +139,12 @@ button span div {
 .offcanvas ul li a:hover::after {
   width: 100%;
 }
-
 .offcanvas.open {
   width: 300px;
 }
-
 .offcanvas.close {
   width: -300px;
 }
-
 .offcanvas .btn_close {
   background: none;
   position: absolute;
@@ -176,12 +159,10 @@ button span div {
   border-radius: 5px;
   float: left;
 }
-
 .offcanvas .btn_close div {
   width: 20px;
   height: 20px;
 }
-
 .offcanvas .btn_close img {
   width: 20px;
   height: 20px;
@@ -191,11 +172,12 @@ button span div {
 }
 
 .nav_home {
-  min-height: 100vh;
-  /* A altura mínima será 60% da altura da janela de visualização */
-  background-image: linear-gradient(to bottom,
+  height: 1100px;
+  background-image: linear-gradient(
+      to bottom,
       rgba(0, 0, 0, 0) 60%,
-      rgba(0, 0, 0, 1)),
+      rgba(0, 0, 0, 1)
+    ),
     url(/img/5459923.jpg);
   width: 100%;
   text-align: center;
@@ -212,7 +194,6 @@ button span div {
   position: absolute;
   font-size: 55px;
 }
-
 .about {
   height: 1100px;
   width: 100%;
@@ -222,51 +203,13 @@ button span div {
 }
 
 .about .container_div {
-  min-width: 60%;
   width: 80%;
-  height: auto;
-  /* Altura adaptável */
+  height: 900px;
   display: flex;
   gap: 15px;
-  justify-content: space-between;
-  /* Ajuste o espaçamento entre as divs */
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  /* Faz com que as divs se movam para a próxima linha quando necessário */
 }
-
-/* Para telas pequenas, como celulares */
-@media (max-width: 768px) {
-  .about .container_div {
-    width: 90%;
-    /* Aumenta a largura para ocupar mais da tela */
-    height: auto;
-    /* Altura adaptável */
-    justify-content: center;
-    /* Centraliza as divs na tela */
-  }
-
-  .about .container_div>div {
-    width: 100%;
-    /* Cada div ocupa 100% da largura disponível */
-    margin-bottom: 20px;
-    /* Adiciona espaço entre as divs */
-  }
-}
-
-/* Para tablets e dispositivos médios */
-@media (max-width: 1024px) {
-  .about .container_div {
-    width: 85%;
-    /* Ajuste de largura para tablets */
-  }
-
-  .about .container_div>.div_container {
-    width: 45%;
-    /* Cada div ocupa 45% da largura do contêiner */
-  }
-}
-
 
 .about .container_div .div_container {
   border: 2px solid #4b4b4b;
@@ -294,7 +237,6 @@ button span div {
 }
 
 .about .container_div .div_container p {
-  height: 60%;
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
