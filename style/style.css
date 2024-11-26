@@ -204,20 +204,15 @@ button span div {
 
 .about .container_div {
   width: 80%;
+  height: 500px;
   display: flex;
   gap: 15px;
-}
-
-@media screen(width <=600px) {
-  .about {
-    width: 50%;
-    display: ruby;
-  }
+  flex-wrap: wrap;
 }
 .about .container_div .div_container {
   border: 2px solid #4b4b4b;
-  height: 500px;
-  width: 350px;
+  height: 400px;
+  width: 150px;
   border-radius: 10px;
   text-align: center;
   display: flex;
@@ -226,12 +221,14 @@ button span div {
   align-items: center;
   padding: 20px;
   transition: all 0.4s;
+  flex-grow: 1;
+  flex-basis: 65;
 }
 
 .about .container_div .div_container:hover {
   box-shadow: 4px 3px 10px #444444;
-  height: 510px;
-  width: 35%;
+  height: 410px;
+  width: 25%;
 }
 
 .about .container_div .div_container h1 {
@@ -241,8 +238,8 @@ button span div {
 
 .about .container_div .div_container p {
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .about .container_div .div_container a {
