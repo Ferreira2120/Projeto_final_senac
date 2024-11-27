@@ -14,9 +14,16 @@ body {
   position: fixed;
   width: 100%;
   text-align: center;
-  display: block;
+  display: flex;
   max-height: 70px;
   margin-top: 0;
+  justify-content: center;
+  gap: 50px;
+}
+.cabeca .countainer_header {
+  height: 30vh;
+  margin-left: 60vh;
+  margin-right: 60vh;
 }
 .cabeca ul {
   display: inline-flex;
@@ -36,6 +43,7 @@ body {
   margin-left: 10px;
   height: 80px;
   width: 80px;
+  margin-top: 0;
 }
 .cabeca .primeira_ul li a {
   font-family: "Italiana", sans-serif;
@@ -169,4 +177,50 @@ button span div {
   position: relative;
   cursor: pointer;
   align-items: center;
+}
+.nav_home {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 1)
+    ),
+    url(/img/linguagens.jpg);
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav_home h1 {
+  position: absolute;
+  font-size: 55px;
+}
+.countainer_atv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 80vh;
+}
+.countainer_atv div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 60vh;
+  border: 2px solid #424242;
+  border-radius: 10px;
+  width: 70%;
+}
+.countainer_atv div img{
+  margin: 10px;
+}
+.countainer_atv div p{
+  top: 50%;
+  bottom: 50%;
 }
