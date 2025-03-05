@@ -1,16 +1,14 @@
-const openOffCanva = document.querySelector(".btn_offcanvas");
-const offcanva = document.querySelector(".offcanvas");
-const closeOffCanva = document.querySelector(".btn_close");
+const btnOpenOffCanvas = document.getElementById("btn-open-offcanvas");
+const OffCanvas = document.querySelector(".offcanvas");
+const btnCloseOffCanvas = document.getElementById("btnCloseOffCanvas");
 
-function abrirOffcanva() {
-  offcanva.classList.add("open");
-  offcanva.classList.remove("close"); // Remove a classe "close" ao abrir
-}
+// console.log(OffCanvas);
 
-function fecharOffCanva() {
-  offcanva.classList.add("close");
-  offcanva.classList.remove("open"); // Remove a classe "open" ao fechar
-}
-
-openOffCanva.addEventListener("click", abrirOffcanva);
-closeOffCanva.addEventListener("click", fecharOffCanva);
+btnOpenOffCanvas.addEventListener("click", (evento) => {
+  OffCanvas.classList.add("open");
+  OffCanvas.classList.remove("close");
+});
+btnCloseOffCanvas.addEventListener("click", (evento) => {
+  OffCanvas.classList.remove("open");
+  OffCanvas.classList.add("close");
+});
