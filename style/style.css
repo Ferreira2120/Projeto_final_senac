@@ -14,16 +14,9 @@ body {
   position: fixed;
   width: 100%;
   text-align: center;
-  display: flex;
+  display: block;
   max-height: 70px;
   margin-top: 0;
-  justify-content: center;
-  gap: 50px;
-}
-.cabeca .countainer_header {
-  height: 30vh;
-  margin-left: 60vh;
-  margin-right: 60vh;
 }
 .cabeca ul {
   display: inline-flex;
@@ -47,7 +40,6 @@ body {
   margin-left: 10px;
   height: 80px;
   width: 80px;
-  margin-top: 0;
 }
 .cabeca .primeira_ul li a {
   font-family: "Italiana", sans-serif;
@@ -191,7 +183,7 @@ button span div {
 }
 
 .nav_home {
-  height: 100vh;
+  height: 1100px;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 60%,
@@ -214,7 +206,7 @@ button span div {
   font-size: 55px;
 }
 .about {
-  height: 90vh;
+  height: 1100px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -267,6 +259,14 @@ button span div {
   border-radius: 50px;
   color: #fff;
   text-decoration: none;
+  margin-bottom: 0;
+}
+
+.about .container_div .div_container a:hover {
+  background: none;
+  border: 2px solid #4b4b4b;
+  transition: all 0.5s;
+}
   margin-bottom: 0;
 }
 
